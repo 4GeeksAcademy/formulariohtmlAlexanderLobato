@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class = "marco">
+        <h1>Payment form example</h1>
+        <h2>Some fields are missing</h2>
+        <div class = "fila1">
+        
+        <div class = "primeralinea">
+        <p>Card #</p>
+        <input type="text" name="Name" />
+        </div>
+        <div class = "primeralinea">
+        <p>CVC #</p>
+        <input type="text" name="Name" />
+        </div>
+        <div class = "primeralinea">
+        <p>Amount </p>
+        <input type="text" name="Name" />
+        </div>
+        </div>
+         
+        <div class="fila2">
+        <div class="segundalinea">
+        <p>First Name</p>
+        <input type="text">
+        </div>
+        <div class="segundalinea">
+        <p>Last Name</p>
+        <input type="text">
+        </div>
+        </div>
+
+        <div class="fila3">
+            <div class="terceralinea">
+                <p>City</p>
+                <input class="terceraquinientos" type="text">
+            </div>
+            <div class="terceralineados">
+                <p>State</p>
+                <input type="text">
+            </div>
+            <div class="terceralineados">
+                <p>Postal Code</p>
+                <input type="text">
+            </div>
+        </div>
+
+            <div class="container">
+            <input type="text" id="name"
+            autocomplete="0ff"
+            placeholder=""
+            class="form_input"/>
+            <label for="name">
+                Name
+            </label>
+         </div>
+
+        <div class="metododepago">
+         <p>We accept:</p>
+         <select id="payment-method" name="payment-method">
+         <option value="">-- Select a method --</option>
+         <option value="credit-card">Credit Card</option>
+         <option value="paypal">PayPal</option>
+         <option value="bank-transfer">Bank Transfer</option>
+         </select>
+         </div>
+
+         
+    
+        <div class="fila4">
+            <p>Message</p>
+            <input type="text">
+            <p>Add any notes here.</p>
+        </div>
+        <div class="buttoms">
+    <button class="cancel"><p>Cancel</p></button> <button class="send"><p>Send</p></button>
+    </div>
+    </div>
+</body>
+</html>
