@@ -5,83 +5,112 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 </head>
 <body>
-    <div class = "marco">
-        <h1>Payment form example</h1>
-        <h2>Some fields are missing</h2>
-        <div class = "fila1">
-        
-        <div class = "primeralinea">
-        <p>Card #</p>
-        <input type="text" name="Name" />
-        </div>
-        <div class = "primeralinea">
-        <p>CVC #</p>
-        <input type="text" name="Name" />
-        </div>
-        <div class = "primeralinea">
-        <p>Amount </p>
-        <input type="text" name="Name" />
-        </div>
-        </div>
-         
-        <div class="fila2">
-        <div class="segundalinea">
-        <p>First Name</p>
-        <input type="text">
-        </div>
-        <div class="segundalinea">
-        <p>Last Name</p>
-        <input type="text">
-        </div>
-        </div>
-
-        <div class="fila3">
-            <div class="terceralinea">
-                <p>City</p>
-                <input class="terceraquinientos" type="text">
-            </div>
-            <div class="terceralineados">
-                <p>State</p>
-                <input type="text">
-            </div>
-            <div class="terceralineados">
-                <p>Postal Code</p>
-                <input type="text">
-            </div>
-        </div>
-
-            <div class="container">
-            <input type="text" id="name"
-            autocomplete="0ff"
-            placeholder=""
-            class="form_input"/>
-            <label for="name">
-                Name
-            </label>
-         </div>
-
-        <div class="metododepago">
-         <p>We accept:</p>
-         <select id="payment-method" name="payment-method">
-         <option value="">-- Select a method --</option>
-         <option value="credit-card">Credit Card</option>
-         <option value="paypal">PayPal</option>
-         <option value="bank-transfer">Bank Transfer</option>
-         </select>
-         </div>
-
-         
-    
-        <div class="fila4">
-            <p>Message</p>
-            <input type="text">
-            <p>Add any notes here.</p>
-        </div>
-        <div class="buttoms">
-    <button class="cancel"><p>Cancel</p></button> <button class="send"><p>Send</p></button>
+   <div class="container">
+    <h1><strong>Pyaments for example</strong></h1>
+    <p><strong>Some fields are missing</strong></p>
+ 
+            <div class="container text-center">
+ 
+            <form class="row g-3 needs-validation" novalidate>
+  <div class="col-md-4 position-relative">
+    <label for="validationTooltip01" class="form-label">Card#</label>
+    <input type="text" class="form-control" id="validationTooltip01" value="XXXXXXXXXXXXX" required>
+    <div class="valid-tooltip">
+      Looks good!
     </div>
+  </div>
+  <div class="col-md-4 position-relative">
+    <label for="validationTooltip02" class="form-label">CVC#</label>
+    <input type="text" class="form-control" id="validationTooltip02" value="0000" required>
+    <div class="valid-tooltip">
+      Looks good!
     </div>
+  </div>
+  <div class="col-md-4 position-relative">
+    <label for="validationTooltipUsername" class="form-label">Amount</label>
+    <div class="input-group has-validation">
+      <span class="input-group-text" id="validationTooltipUsernamePrepend">$</span>
+      <input type="text" class="form-control" id="validationTooltipUsername" aria-describedby="validationTooltipUsernamePrepend" required>
+      <div class="invalid-tooltip">
+      </div>
+    </div>
+  </div>
+  <form class="row g-3">
+  <div class="col-md-4">
+    <label for="validationServer01" class="form-label">First name</label>
+    <input type="text" class="form-control is-valid" id="validationServer01" value="" required>
+  </div>
+  <div class="col-md-4">
+    <label for="validationServer02" class="form-label">Last name</label>
+    <input type="text" class="form-control is-valid" id="validationServer02" value="" required>
+  </div>
+  <div class="col-md-6 position-relative">
+    <label for="validationTooltip03" class="form-label">City</label>
+    <input type="text" class="form-control" id="validationTooltip03" required>
+    <div class="invalid-tooltip">
+      Please provide a valid city.
+    </div>
+  </div>
+  <div class="col-md-3 position-relative">
+    <label for="validationTooltip04" class="form-label">State</label>
+    <select class="form-select" id="validationTooltip04" required>
+      <option selected disabled value="">Choose...</option>
+      <option>...</option>
+    </select>
+    <div class="invalid-tooltip">
+      Please select a valid state.
+    </div>
+  </div>
+  <div class="col-md-3 position-relative">
+    <label for="validationTooltip05" class="form-label">Zip</label>
+    <input type="text" class="form-control" id="validationTooltip05" required>
+    <div class="invalid-tooltip">
+      Please provide a valid zip.
+    </div>
+  </div>
+  
+</form>
+</div>
+
+
+<p><strong>We accept</strong></p>
+<div class="dropdown">
+  <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+    Payments
+  </button>
+  <ul class="dropdown-menu">
+    <li><a class="dropdown-item" href="#">Card</a></li>
+    <li><a class="dropdown-item" href="#">Paypal</a></li>
+    <li><a class="dropdown-item" href="#">Something else here</a></li>
+  </ul>
+
+
+<form class="was-validated">
+  <div class="mb-3">
+    <label for="validationTextarea" class="form-label">Message</label>
+    <textarea class="form-control" id="validationTextarea" placeholder="Required example textarea" required></textarea>
+    <div class="invalid-feedback">
+      Add any notes here.
+    </div>
+  </div>
+  
+  <div class="col-12">
+    <button class="btn btn-primary" type="submit">Submit form</button>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
 </html>
